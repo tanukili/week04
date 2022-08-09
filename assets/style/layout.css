@@ -1,0 +1,30 @@
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+img {
+  max-width: 100%;
+  height: auto; }
+
+.body {
+  font-family: 'Roboto','Noto Sans TC', sans-serif,serif; }
+
+.header, .footer {
+  background: #aa0601; }
+
+a, p {
+  color: #fff;
+  text-decoration: none; }
+
+h1 {
+  background: url(../images/logo-white.png);
+  max-width: 80px;
+  height: 48.57px;
+  background-position: center;
+  background-size: cover;
+  display: block;
+  text-indent: 101%;
+  overflow: hidden;
+  white-space: nowrap; }
+
+/*# sourceMappingURL=layout.css.map */
