@@ -7,7 +7,9 @@ img {
   height: auto; }
 
 .body {
-  font-family: 'Roboto','Noto Sans TC', sans-serif,serif; }
+  font-family: 'Roboto','Noto Sans TC', sans-serif;
+  font-size: 16px;
+  line-height: 24px; }
 
 .header, .footer {
   background: #aa0601; }
@@ -18,13 +20,61 @@ a, p {
 
 h1 {
   background: url(../images/logo-white.png);
-  max-width: 80px;
+  width: 80px;
   height: 48.57px;
   background-position: center;
   background-size: cover;
   display: block;
   text-indent: 101%;
   overflow: hidden;
-  white-space: nowrap; }
+  white-space: nowrap;
+  margin: 16px 0 15.43px 0; }
+
+.header ul li a {
+  font-size: 20px;
+  line-height: 30px;
+  display: block;
+  padding: 25px 0;
+  margin: 0 0 0 64px; }
+
+.header .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+.header ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+.bottom-menu, .bottom-menu ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+.contactInfo {
+  font-size: 36px;
+  line-height: 54px; }
+
+.copyright li a {
+  font-size: 14px;
+  line-height: 21px; }
+
+.copyright, .copyright ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
 
 /*# sourceMappingURL=layout.css.map */
