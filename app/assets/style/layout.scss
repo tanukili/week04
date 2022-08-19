@@ -48,36 +48,75 @@ h1{
     justify-content: space-between;
 }
 
-.bottom-menu,.bottom-menu ul{
+.bottom-menu, .bottom-menu ul, .copyright, .copyright ul{
     display: flex;
     justify-content: space-between;
 }
-.bottom-menu ul{
-    margin: 48px 0 24px 0;
+.bottom-menu{
+    margin: 0 0 24px 0;
+    align-items: center;
 }
 .bottom-menu li a{
     display: block;
-    padding: 12px 0;
-    margin: 0 48px 0 0;
+    margin: 48px 48px 0 0;
 }
 .sns li a{
     width: 48px;
     height: auto;
-    margin: 0 32px 0 0;
+    margin: 48px 0 0 32px;
 }
-.contactInfo{
+.contactInfo li{
     font-size: 36px;
     line-height: 54px;
-    margin: 0 0 8px 0;
+    margin: 8px 0 0 0;
 }
 .contactInfo span{
     font-size: 36px;
 }
+.contactInfo{
+    padding: 0 0 32px 0;
+    border-bottom: 1px solid #fff;
+}
 .copyright li a{
     font-size: 14px;
     line-height: 21px;
+    display: block;
+    margin: 0 0 0 48px;
 }
-.copyright,.copyright ul{
-    display: flex;
-    justify-content: space-between;
+.copyright{
+    padding: 32px 0;
+}
+
+@media (max-width:992px) {
+    .sns li a{
+        width: 40px;
+        height: auto;
+        margin: 48px 0 0 16px;
+    }
+    .copyright{
+        padding: 32px 0 40px 0;
+    }  
+}
+
+@media (max-width:767px) {
+
+    .bottom-menu ul{
+        display: none;
+    }
+    .contactInfo li, .copyright li a{
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .contactInfo span{
+        font-size: 16px;
+    }
+    .copyright, .copyright ul{
+        flex-direction: column;
+    }
+    .copyright{
+        padding: 16px 0 24px 0;
+    }
+    .copyright li a{
+        margin: 8px 0 0 0;
+    }
 }

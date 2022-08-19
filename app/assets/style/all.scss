@@ -2,3 +2,14 @@
   max-width: 1296px;
   margin: 0 auto;
 }
+
+@media (max-width:992px) {
+  .container{
+    max-width: 696px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width:767px) {
+  
+}
