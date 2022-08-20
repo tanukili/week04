@@ -20,12 +20,19 @@
   <header class="header">
     <div class="container">
       <h1><a href="./index.html">Glasses</h1></a>
-      <ul>
-        <li><a href="#">系列鏡框</a></li>
-        <li><a href="#">門市據點</a></li>
-        <li><a href="#">部落格</a></li>
-        <li><a href="#">常見問題</a></li>
-      </ul>
+      <div class="top-menu">
+        <a href="#" class="hambuger">
+          <span class="material-symbols-outlined">
+            menu
+          </span>
+        </a>
+        <ul>
+          <li><a href="#">系列鏡框</a></li>
+          <li><a href="#">門市據點</a></li>
+          <li><a href="#">部落格</a></li>
+          <li><a href="#">常見問題</a></li>
+        </ul>
+      </div>
     </div>
   </header>
 
@@ -33,34 +40,36 @@
 
   <footer class="footer">
     <div class="container">
-      <div class="bottom-menu"> 
-        <ul class=" ">
-          <li><a href="./index.html">首頁</a></li>
-          <li><a href="#">系列鏡框</a></li>
-          <li><a href="#">門市據點</a></li>
-          <li><a href="#">部落格</a></li>
-          <li><a href="#">常見問題</a></li>
-        </ul>
+      <div class="bottom-menu">
+        <div> 
+          <ul class="bottom-menu-list">
+            <li><a href="./index.html">首頁</a></li>
+            <li><a href="#">系列鏡框</a></li>
+            <li><a href="#">門市據點</a></li>
+            <li><a href="#">部落格</a></li>
+            <li><a href="#">常見問題</a></li>
+          </ul>
+          <ul class="contactInfo">
+            <li>
+              <a href="tel:+0800-000-000">
+                <span class="material-symbols-outlined">phone</span>
+                0800-000-000
+              </a>
+            </li>
+            <li>
+              <a href="glasses@business.com">
+                <span class="material-symbols-outlined">mail</span>
+                glasses@business.com
+              </a>
+            </li>
+          </ul>
+        </div>
         <ul class="sns">
           <li><a href="#"><img src="./assets/images/ic-social-fb.png" alt="fb-icon"></a></li>
           <li><a href="#"><img src="./assets/images/ic_social_ig.png" alt="ig-icon"></a></li>
           <li><a href="#"><img src="./assets/images/ic_social_line.png" alt="line-icon"></a></li>
         </ul>
       </div>
-      <ul class="contactInfo">
-        <li>
-          <a href="tel:+0800-000-000">
-            <span class="material-symbols-outlined">phone</span>
-            0800-000-000
-          </a>
-        </li>
-        <li>
-          <a href="glasses@business.com">
-            <span class="material-symbols-outlined">mail</span>
-            glasses@business.com
-          </a>
-        </li>
-      </ul>
       <div class="copyright">
         <p>Copyright © 2020 Glasses.All rights reserved.</p>
         <ul>
@@ -70,6 +79,7 @@
       </div>
     </div>
   </footer>
+  <script src="./assets/js/jquery-3.6.0.min.js"></script>
   <script src="./assets/js/vendors.js"></script>
   <script src="./assets/js/all.js"></script>
 </body>
