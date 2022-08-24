@@ -12,11 +12,11 @@ body {
   font-size: 16px;
   line-height: 24px; }
 
-.header, .footer {
-  background: #aa0601; }
+.header, .footer, a {
+  background: #aa0601;
+  color: #fff; }
 
-a, p {
-  color: #fff;
+a {
   text-decoration: none; }
 
 h1 {
