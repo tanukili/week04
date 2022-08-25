@@ -12,12 +12,13 @@ body{
     line-height: 24px;
 }
 
-.header, .footer , a{
+.header, .footer ,.header a, .footer a{
     background: #aa0601;
     color: #fff;
 }
 a{
     text-decoration: none;
+    color: #000;
 }
 
 h1{
