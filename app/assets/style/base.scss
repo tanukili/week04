@@ -1,0 +1,43 @@
+*,*::before,*::after{
+    box-sizing: border-box;
+}
+img{
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+body{
+    font-family: 'Roboto','Noto Sans TC', sans-serif;
+    font-size: $FZ-bace;
+    line-height: $LH-bace;
+}
+a{
+    text-decoration: none;
+    color: $baceColor-b;
+}
+.container{
+    max-width: 1296px;
+    margin: 0 auto;
+  }
+  
+@media (max-width:992px) {
+    .container{
+      max-width: 696px;
+    }
+  }
+  
+@media (max-width:767px) {
+    .container{
+      max-width: 348px;
+    }
+  }
+
+.df-jcsb{
+    display: flex;
+    justify-content: space-between;
+}
+.df-jcsb-aic{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

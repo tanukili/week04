@@ -1,24 +1,8 @@
-*,*::before,*::after{
-    box-sizing: border-box;
-}
-img{
-    max-width: 100%;
-    height: auto;
-    vertical-align: middle;
-}
-body{
-    font-family: 'Roboto','Noto Sans TC', sans-serif;
-    font-size: 16px;
-    line-height: 24px;
-}
-
-.header, .footer ,.header a, .footer a{
-    background: #aa0601;
-    color: #fff;
-}
-a{
-    text-decoration: none;
-    color: #000;
+.layout-bg {
+    background: $primary;
+    a{
+        color: $baceColor-w;
+    }
 }
 
 h1{
@@ -39,11 +23,6 @@ h1{
     display: block;
     padding: 25px 0;
     margin: 0 0 0 64px;
-}
-.header .container, .top-menu ul{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 }
 .hambuger{
     display: none;
