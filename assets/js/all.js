@@ -7,7 +7,7 @@ $(document).ready(function () {
 $(document).ready(function () {
   $('.hambuger').click(function (e) {
     e.preventDefault();
-    $('.top-menu ul').slideToggle(600);
+    $('.top-menu').slideToggle(600);
   });
 });
 "use strict";
