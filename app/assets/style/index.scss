@@ -6,47 +6,40 @@
     text-align: center;
     margin: 0 0 48px 0;
 }
-.btn-style{
-    background: #aa0601;
-    color: #fff;
-}
-.serve ul, .classic ul, .design ul{
-    display: flex;
-    justify-content: space-between;
-}
-.serve, .classic, .design, .recommedation, .contact-form{
-    padding: 80px 0;
+.p-tp-80{
+    padding: $m-8*10 0;
 }
 
 .banner{
-    color: #650300;
+    color: $FC-indexBanner;
     background: url(../images/home-header.png);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    p{
+        font-size: 36px;
+        line-height: 54px;
+    }
+    h2{
+        font-size: 64px;
+        line-height: 96px;
+        font-weight: 700;
+        margin: 0 0 4px 0;
+    }
+    a{
+        font-size: 20px;
+        line-height: 30px;
+        font-weight: 500;
+        padding: 6px 12px;
+    }
+    .banner-content{
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        padding: 296px 0;
+    }
 }
-.banner p{
-    font-size: 36px;
-    line-height: 54px;
-}
-.banner h2{
-    font-size: 64px;
-    line-height: 96px;
-    font-weight: 700;
-    margin: 0 0 4px 0;
-}
-.banner a{
-    font-size: 20px;
-    line-height: 30px;
-    font-weight: 500;
-    padding: 6px 12px;
-}
-.banner-content{
-    display: flex;
-    flex-direction: column;
-    align-items: end;
-    padding: 296px 0;
-}
+
 
 
 .bg-style{
