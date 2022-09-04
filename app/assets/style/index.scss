@@ -1,10 +1,10 @@
 .index-title{
-    color: #650300;
-    font-size: 48px;
-    line-height: 72px;
-    font-weight: 700;
+    color: $FC-indexBanner;
+    font-size: $FZ-4*2;
+    line-height: $LH-4*2;
+    font-weight: $FW-4;
     text-align: center;
-    margin: 0 0 48px 0;
+    margin: 0 0 $m-8*6 0;
 }
 .p-tp-80{
     padding: $m-8*10 0;
@@ -16,19 +16,13 @@
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    p{
-        font-size: 36px;
-        line-height: 54px;
-    }
     h2{
         font-size: 64px;
         line-height: 96px;
-        font-weight: 700;
-        margin: 0 0 4px 0;
+        font-weight: $FW-4;
+        margin: 0 0 $m-8*0.5 0;
     }
     a{
-        font-size: 20px;
-        line-height: 30px;
         font-weight: 500;
         padding: 6px 12px;
     }
@@ -36,120 +30,111 @@
         display: flex;
         flex-direction: column;
         align-items: end;
-        padding: 296px 0;
+        padding: $m-8*37 0;
     }
 }
 
-
-
-.bg-style{
-    background: #fbf2f2;
-}
-.serve h3{
-    margin: 0 0 24px 0;
-}
-.serve h4{
-    font-size: 24px;
-    line-height: 36px;
-    font-weight: 700;
-    text-align: center;
-    color: #650300;
-    margin: 0 0 8px 0;
-}
-.serve ul li{
-    max-width: 306px;
-}
-.serve img{
-    max-width: 100px;
-    margin: 16px auto;
-    display: block;
+.serve {
+    h3{
+        margin: 0 0 $m-8*3 0;
+    }
+    h4{
+        font-weight: $FW-4;
+        text-align: center;
+        color: $FC-indexBanner;
+        margin: 0 0 $m-8 0;
+    }
+    ul li{
+        max-width: 306px;
+    }
+    img{
+        max-width: 100px;
+        margin: $m-8*2 auto;
+        display: block;
+    }
 }
 
-.classic p, .design p{
-    font-size: 48px;
-    line-height: 72px;
-    font-weight: 900;
+.produce-series{
+    font-size: $FZ-4*2;
+    line-height: $LH-4*2;
+    font-weight: $FW-5;
     font-style: italic;
-    color: #aa0601;
+    color: $primary;
     text-align: center;
 }
-.classic p{
-    margin: 8px 0 0 0;
-}
-.classic ul li{
-    max-width: 416px;
-}
-.design .index-title{
-    color: #fff;
-}
-.design p{
-    padding: 8px 0;
-    background: #fff;
-}
 
+.classic{
+    p{
+        margin: $m-8 0 0 0;
+    }
+    ul li{
+        max-width: 416px;
+    }
+}
 .design{
     background: url(../images/index-bg.png);
+    .index-title{
+        color: $baceColor-w;
+    }
+    p{
+        padding: $m-8 0;
+        background: $baceColor-w;
+    }
 }
-
-.recommedation ul, .recommedation ul li{
-    display: flex;
-    justify-content: space-between;
-}
-.recommedation ul li{
-    max-width: 306px;
-    flex-direction: column;
-    box-shadow: 0px 2px 6px #00000029;
-}
-.recommedation img{
-    margin: 0 0 16px 0;
-}
-.recommedation p{
-    margin: 0 0 8px 0;
-    padding: 0 16px;
-}
-.recommedation-item{
-    margin: 0 0 72px 0;
-}
-.date {
-    font-size: 14px;
-    line-height: 21px;
-    color: #707070;
-    margin: 0 0 16px 0;
+.recommedation{
+    ul li{
+        max-width: 306px;
+        flex-direction: column;
+        box-shadow: 0px 2px 6px #00000029;
+    }
+    img{
+        margin: 0 0 $m-8*2 0;
+    }
+    p{
+        margin: 0 0 $m-8 0;
+        padding: 0 $m-8*2;
+    }
+    .recommedation-item{
+        margin: 0 0 $m-8*9 0;
+    }
+    .date {
+        color: $FC-date;
+        margin: 0 0 $m-8*2 0;
+    }
 }
 
 .contact-form{
-    max-width: 636px;    
+    max-width: 636px;
+    p{
+        margin: 0 0 $m-8*3 0;
+    }
+    label{
+        display: block;
+        margin: 0 0 $m-8 0;
+    }
+    input{
+        width: 636px;    
+        padding: 6px 12px;
+        margin: 0 0 $m-8*2 0;
+    }
+    .suggestion{
+        padding: 6px 12px 106px 12px;
+    }
+    .privacy-policy{
+        display: flex;
+        margin: 0 0 $m-8*6 0;
+        input{
+            display: block;
+            width: 18px;
+            height: 18px;
+            margin: 4px;
+        }
+    }
+    .submit{
+        width: auto;
+        font-weight: $FW-4;
+        padding: 16px 176px;
+        margin: 0 110px;
+    }
 }
-.contact-form p{
-    font-size: 20px;
-    line-height: 30px;
-    margin: 0 0 24px 0;
-}
-.contact-form label{
-    display: block;
-    margin: 0 0 8px 0;
-}
-.contact-form input{
-    width: 636px;    
-    padding: 6px 12px;
-    margin: 0 0 16px 0;
-}
-.contact-form .suggestion{
-    padding: 6px 12px 106px 12px;
-}
-.privacy-policy{
-    display: flex;
-    margin: 0 0 48px 0;
-}
-.privacy-policy input{
-    display: block;
-    width: 18px;
-    height: 18px;
-    margin: 4px;
-}
-.contact-form .submit{
-    width: auto;
-    font-weight: 700;
-    padding: 16px 176px;
-    margin: 0 110px;
-}
+

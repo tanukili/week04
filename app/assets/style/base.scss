@@ -20,10 +20,14 @@ a{
     max-width: 1296px;
     margin: 0 auto;
   }
+.bg-style{
+    background: $secondary;
+}
 .btn-style{
     background: $primary;
     color: $baceColor-w;
 }
+
   
 @media (max-width:992px) {
     .container{
@@ -44,10 +48,14 @@ a{
 .fontsize-03{
   font-size: $FZ-3;
   line-height: $LH-3;
-  ;
+}
+.fontsize-04{
+  font-size: $FZ-4;
+  line-height: $LH-4;
 }
 .fontsize-05{
   font-size: $FZ-5;
+  line-height: $LH-5;
 }
 
 .df-jcsb{
