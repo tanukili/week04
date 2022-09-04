@@ -68,6 +68,9 @@ a {
   max-width: 1296px;
   margin: 0 auto; }
 
+.bg-style {
+  background: #FBF2F2; }
+
 .btn-style {
   background: #AA0601;
   color: #fff; }
@@ -88,8 +91,13 @@ a {
   font-size: 20px;
   line-height: 30PX; }
 
+.fontsize-04 {
+  font-size: 24px;
+  line-height: 36PX; }
+
 .fontsize-05 {
-  font-size: 36px; }
+  font-size: 36px;
+  line-height: 54PX; }
 
 .df-jcsb {
   display: -webkit-box;
@@ -224,7 +232,7 @@ a {
 .index-title {
   color: #650300;
   font-size: 48px;
-  line-height: 72px;
+  line-height: 72PX;
   font-weight: 700;
   text-align: center;
   margin: 0 0 48px 0; }
@@ -238,17 +246,12 @@ a {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat; }
-  .banner p {
-    font-size: 36px;
-    line-height: 54px; }
   .banner h2 {
     font-size: 64px;
     line-height: 96px;
     font-weight: 700;
     margin: 0 0 4px 0; }
   .banner a {
-    font-size: 20px;
-    line-height: 30px;
     font-weight: 500;
     padding: 6px 12px; }
   .banner .banner-content {
@@ -264,15 +267,10 @@ a {
             align-items: end;
     padding: 296px 0; }
 
-.bg-style {
-  background: #fbf2f2; }
-
 .serve h3 {
   margin: 0 0 24px 0; }
 
 .serve h4 {
-  font-size: 24px;
-  line-height: 36px;
   font-weight: 700;
   text-align: center;
   color: #650300;
@@ -286,12 +284,12 @@ a {
   margin: 16px auto;
   display: block; }
 
-.classic p, .design p {
+.produce-series {
   font-size: 48px;
-  line-height: 72px;
+  line-height: 72PX;
   font-weight: 900;
   font-style: italic;
-  color: #aa0601;
+  color: #AA0601;
   text-align: center; }
 
 .classic p {
@@ -300,23 +298,13 @@ a {
 .classic ul li {
   max-width: 416px; }
 
-.design .index-title {
-  color: #fff; }
-
-.design p {
-  padding: 8px 0;
-  background: #fff; }
-
 .design {
   background: url(../images/index-bg.png); }
-
-.recommedation ul, .recommedation ul li {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between; }
+  .design .index-title {
+    color: #fff; }
+  .design p {
+    padding: 8px 0;
+    background: #fff; }
 
 .recommedation ul li {
   max-width: 306px;
@@ -334,52 +322,41 @@ a {
   margin: 0 0 8px 0;
   padding: 0 16px; }
 
-.recommedation-item {
+.recommedation .recommedation-item {
   margin: 0 0 72px 0; }
 
-.date {
-  font-size: 14px;
-  line-height: 21px;
+.recommedation .date {
   color: #707070;
   margin: 0 0 16px 0; }
 
 .contact-form {
   max-width: 636px; }
-
-.contact-form p {
-  font-size: 20px;
-  line-height: 30px;
-  margin: 0 0 24px 0; }
-
-.contact-form label {
-  display: block;
-  margin: 0 0 8px 0; }
-
-.contact-form input {
-  width: 636px;
-  padding: 6px 12px;
-  margin: 0 0 16px 0; }
-
-.contact-form .suggestion {
-  padding: 6px 12px 106px 12px; }
-
-.privacy-policy {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin: 0 0 48px 0; }
-
-.privacy-policy input {
-  display: block;
-  width: 18px;
-  height: 18px;
-  margin: 4px; }
-
-.contact-form .submit {
-  width: auto;
-  font-weight: 700;
-  padding: 16px 176px;
-  margin: 0 110px; }
+  .contact-form p {
+    margin: 0 0 24px 0; }
+  .contact-form label {
+    display: block;
+    margin: 0 0 8px 0; }
+  .contact-form input {
+    width: 636px;
+    padding: 6px 12px;
+    margin: 0 0 16px 0; }
+  .contact-form .suggestion {
+    padding: 6px 12px 106px 12px; }
+  .contact-form .privacy-policy {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0 0 48px 0; }
+    .contact-form .privacy-policy input {
+      display: block;
+      width: 18px;
+      height: 18px;
+      margin: 4px; }
+  .contact-form .submit {
+    width: auto;
+    font-weight: 700;
+    padding: 16px 176px;
+    margin: 0 110px; }
 
 .classic-menu h3 {
   font-size: 32px;
