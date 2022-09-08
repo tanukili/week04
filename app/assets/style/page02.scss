@@ -1,20 +1,14 @@
-.classic-menu h3{
-    font-size: 32px;
-    line-height: 48px;
-    font-weight: 500;
+.classic-menu{ 
+    h3{
     text-align: center;
+    }
     a{
         display: block;
-        padding: 24px 0 16px;
         width: 432px;
         border: 1px solid #DCDCDC;
         border-bottom: 8px solid #fff;
         &:hover{
             border-bottom: 8px solid #AA0601;
         }
-    }
-    ul{
-        display: flex;
-        justify-content: space-between;
     }
 }

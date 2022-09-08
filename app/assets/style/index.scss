@@ -1,17 +1,13 @@
 .index-title{
     color: $FC-indexBanner;
-    font-size: $FZ-4*2;
-    line-height: $LH-4*2;
-    font-weight: $FW-4;
+    font-size: $font-size-bace*6;
+    line-height: $font-size-bace*3;
+    font-weight: $font-weight-bace*1.75;
     text-align: center;
-    margin: 0 0 $m-8*6 0;
 }
-.p-tp-80{
-    padding: $m-8*10 0;
-}
-
 .banner{
     color: $FC-indexBanner;
+    height: 787px;
     background: url(../images/home-header.png);
     background-position: center;
     background-size: cover;
@@ -22,41 +18,27 @@
         background-size: cover;
         background-repeat: no-repeat;
     }
-    h2{
-        font-size: 64px;
-        line-height: 96px;
-        font-weight: $FW-4;
-        margin: 0 0 $m-8*0.5 0;
-    }
-    a{
-        font-weight: 500;
-        padding: 6px 12px;
+    @include mobile{
+        height: 396px;
     }
     .banner-content{
         display: flex;
         flex-direction: column;
         align-items: end;
-        padding: $m-8*37 0;
     }
 }
 
 .serve {
-    h3{
-        margin: 0 0 $m-8*3 0;
-    }
     h4{
-        font-weight: $FW-4;
         text-align: center;
         color: $FC-indexBanner;
-        margin: 0 0 $m-8 0;
     }
     ul{
         @include pad{
-            margin: 0 -12px;
+            margin: 0 $spacing-bace*-1.5;
         }
         li{
             max-width: 25%;
-            padding: 0 12px;
             @include pad{
                 max-width: 50%;
             }
@@ -64,27 +46,22 @@
     } 
     img{
         max-width: 100px;
-        margin: $m-8*2 auto;
         display: block;
         @include pad{
-            margin: 0 auto $m-8*2;
+            margin: 0 auto $spacing-bace*2;
         }
     }
 }
 
-.produce-series{
-    font-size: $FZ-4*2;
-    line-height: $LH-4*2;
-    font-weight: $FW-5;
+.series-font-style{
+    font-size: $font-size-bace*3;
+    line-height: $light-hight-bace*3;
     font-style: italic;
     color: $primary;
     text-align: center;
 }
 
 .classic{
-    p{
-        margin: $m-8 0 0 0;
-    }
     ul {
         @include pad{
             flex-direction: column;
@@ -94,7 +71,7 @@
             max-width: 416px;
             @include pad{
                 max-width: 336px;
-                margin: 0 0 24px 0;
+                margin: 0 0 $spacing-bace*3 0;
             }
         }
     }
@@ -102,46 +79,34 @@
 .design{
     background: url(../images/index-bg.png);
     .index-title{
-        color: $baceColor-w;
+        color: $baceColor-light;
     }
     li{
         @include pad{
-            margin: 0 0 24px 0;
+            margin: 0 0 $spacing-bace*3 0;
         }
     }
     p{
-        padding: $m-8 0;
-        background: $baceColor-w;
+        background: $baceColor-light;
     }
 }
 .recommedation{
     ul{
-       margin: 0 -24px;  
+       margin: 0 $spacing-bace*-3;  
         li{
             max-width: 25%;
-            padding: 0 12px;
             flex-direction: column;
             @include pad{
                 max-width: 50%;
-                margin: 0 0 24px 0;
+                margin: 0 0 $spacing-bace*3 0;
             }
         }
     }
-    img{
-        margin: 0 0 $m-8*2 0;
-    }
-    p{
-        margin: 0 0 $m-8 0;
-        padding: 0 $m-8*2;
-    }
     .recommedation-item{
+        height: 511px;
         box-shadow: 0px 2px 6px #00000029;
         -moz-box-shadow: 0px 2px 6px #00000029;
         -webkit-box-shadow: 0px 2px 6px #00000029;
-    }
-    .date {
-        color: $FC-date;
-        margin: $m-8*9 0 $m-8*2 0;
     }
 }
 .contact-form{
@@ -151,51 +116,35 @@
     }
     .index-title{
         @include pad{
-            margin: 0 0 24px 0;
+            margin: 0 0 $spacing-bace*3 0;
         }
     }
     p{
-        margin: 0 0 $m-8*3 0;
+        margin: 0 0 $spacing-bace*3 0;
         @include pad{
-            font-size: $FZ-2;
-            line-height: $LH-2;
+            font-size: $font-size-bace;
+            line-height: $light-hight-bace;
         }
     }
     label{
         display: block;
-        margin: 0 0 $m-8 0;
     }
     input{
         width: 636px;    
-        padding: 6px 12px;
-        margin: 0 0 $m-8*2 0;
-        font-size: $FZ-2;
-        line-height: $LH-2;
         @include pad{
             max-width: 576px;
         }
     }
-    .suggestion{
-        padding: 6px 12px 102px 12px;
-    }
     .privacy-policy{
-        display: flex;
-        margin: 0 0 $m-8*6 0;
-        input{
-            display: block;
-            width: 18px;
-            height: 18px;
-            margin: $m-8*0.5;
-        }
+        display: block;
+        width: 18px;
+        height: 18px;
     }
     .submit{
         width: auto;
-        font-weight: $FW-4;
-        padding: $m-8*2 $m-8*22;
-        margin: 0 110px;
         @include pad{
-            padding: $m-8*2 $m-8*17;
-            margin: 0 120px;
+            padding: $spacing-bace*2 $spacing-bace*17;
+            margin: 0 $spacing-bace*15;
         }
     }
 }

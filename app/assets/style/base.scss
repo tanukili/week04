@@ -23,6 +23,9 @@ a{
     background: $primary;
     color: $baceColor-light;
 }
+.color-pale{
+    color: $baceColor-pale;  
+}
 
 @media(max-width: 992px){
   .container{
@@ -60,6 +63,10 @@ a{
     line-height: $light-hight-bace;
   }
 }
+.font-size-02{
+  font-size: $font-size-bace;//16px
+  line-height: $light-hight-bace;//24px
+}
 .font-size-03{
   font-size: $font-size-bace*1.25;//20px
   line-height: $light-hight-bace*1.25;//30px
@@ -75,6 +82,10 @@ a{
     font-size: $font-size-bace;
     line-height: $light-hight-bace;
   }
+}
+.font-size-06{
+  font-size: $font-size-bace*4;//64px
+  line-height: $light-hight-bace*4;//96px
 }
 
 
@@ -261,30 +272,40 @@ a{
 .ml-11{
   margin-left: $spacing-bace*8;
 }
-/*.mt-1{
-  margin-top: $spacing-bace;//
+.mt-12{
+  margin-top: $spacing-bace*10;//80
 }
-.mr-1{
-  margin-right: $spacing-bace;
+.mr-12{
+  margin-right: $spacing-bace*10;
 }
-.mb-1{
-  margin-bottom: $spacing-bace;
+.mb-12{
+  margin-bottom: $spacing-bace*10;
 }
-.ml-1{
-  margin-left: $spacing-bace;
+.ml-12{
+  margin-left: $spacing-bace*10;
 }
-.mt-1{
-  margin-top: $spacing-bace;//
+.mt-13{
+  margin-top: $spacing-bace*13.75;//110
 }
-.mr-1{
-  margin-right: $spacing-bace;
+.mr-13{
+  margin-right: $spacing-bace*13.75;
 }
-.mb-1{
-  margin-bottom: $spacing-bace;
+.mb-13{
+  margin-bottom: $spacing-bace*13.75;
 }
-.ml-1{
-  margin-left: $spacing-bace;
-}*/
+.ml-13{
+  margin-left: $spacing-bace*13.75;
+}
+.mr-auto{
+  margin-right: auto;
+}
+.mb-auto{
+  margin-bottom: auto;
+}
+.ml-auto{
+  margin-left: auto;
+}
+
 
 
 .pt-1{
@@ -407,15 +428,39 @@ a{
 .pl-10{
   padding-left: $spacing-bace*6;
 }
-.pt-1{
-  padding-top: $spacing-bace;//
+.pt-11{
+  padding-top: $spacing-bace*10;//80
 }
-.pr-1{
-  padding-right: $spacing-bace;
+.pr-11{
+  padding-right: $spacing-bace*10;
 }
-.pb-1{
-  padding-bottom: $spacing-bace;
+.pb-11{
+  padding-bottom: $spacing-bace*10;
 }
-.pl-1{
-  padding-left: $spacing-bace;
+.pl-11{
+  padding-left: $spacing-bace*10;
+}
+.pt-12{
+  padding-top: $spacing-bace*12.75;//102
+}
+.pr-12{
+  padding-right: $spacing-bace*12.75;
+}
+.pb-12{
+  padding-bottom: $spacing-bace*12.75;
+}
+.pl-12{
+  padding-left: $spacing-bace*12.75;
+}
+.pt-13{
+  padding-top: $spacing-bace*22;//176
+}
+.pr-13{
+  padding-right: $spacing-bace*22;
+}
+.pb-13{
+  padding-bottom: $spacing-bace*22;
+}
+.pl-13{
+  padding-left: $spacing-bace*22;
 }
