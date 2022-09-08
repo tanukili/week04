@@ -57,74 +57,43 @@
 }
 
 .bottom-menu{
-    padding: $m-8*6 0 $m-8*4 0;
-    border-bottom: 1px solid $baceColor-w;
+    border-bottom: 1px solid $baceColor-light;
     @include mobile{
-        padding: $m-8*3 0;
+        padding: $spacing-bace*3 0;
     }
     .bottom-menu-list{
-        margin: 0 0 $m-36 0;
         align-items: center;
         @include pad{
-            margin: 0 0 $m-8*4 0;
+            margin-bottom: $spacing-bace*4.5;
         }
         @include mobile{
             display: none;
         }
-        a{
-            margin: 0 $m-8*6 0 0;
-        }
     }
     .sns{
-        display: flex;
         a{
             width: 48px;
             height: auto;
-            margin: 0 0 0 $m-8*4;
             @include pad{
                 width: 40px;
-                margin: 0 0 0 $m-8*2;
             }
             @include mobile{
-                width: 24px;
-                margin: 0 0 0 $m-8;        
+                width: 24px;        
             }
         }
     }
-    .contactInfo{
-        li{
-            line-height: 54px;
-            margin: $m-8 0 0 0;
-        }
-        a{
-            @include mobile{
-                font-size: $FZ-2;
-                line-height: $LH-2;
-            }
-        }
-        span{
-            @include mobile{
-                font-size: $FZ-2;
-            }
-        }
-    } 
-
 }
 .copyright{
-    padding: $m-8*4 0;
     @include pad{
-        padding: $m-8*4 0 $m-8*5 0;
+        padding-bottom: $spacing-bace*5;
     }
     @include mobile{
         display: block;
-        padding: $m-8*2 0 $m-8*3 0;
+        padding: $spacing-bace*2 0 $spacing-bace*3 0;
     }
     a{
-        margin: 0 0 0 $m-8*6;
         @include mobile{
-            margin: $m-8 0 0 0;
-            font-size: $FZ-2;
-            line-height: $LH-2;
+            margin: $spacing-bace 0 0 0;
         }
     }
     ul{

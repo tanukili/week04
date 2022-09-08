@@ -55,6 +55,10 @@ a{
 .font-size-01{
   font-size: $font-size-bace*0.875;//14px
   line-height: $light-hight-bace*0.875;//21px
+  @include mobile{
+    font-size: $font-size-bace;
+    line-height: $light-hight-bace;
+  }
 }
 .font-size-03{
   font-size: $font-size-bace*1.25;//20px
@@ -67,7 +71,12 @@ a{
 .font-size-05{
   font-size: $font-size-bace*2.25;//36px
   line-height: $light-hight-bace*2.25;//54px
+  @include mobile{
+    font-size: $font-size-bace;
+    line-height: $light-hight-bace;
+  }
 }
+
 
 .font-weight-01{
   font-weight: $font-weight-bace*0.75;//300
@@ -82,6 +91,9 @@ a{
   font-weight: $font-weight-bace*1.125;//900
 }
 
+.df{
+  display: flex;
+}
 .df-jcsb{
     display: flex;
     justify-content: space-between;
@@ -179,15 +191,39 @@ a{
 }
 .mt-8{
   margin-top: $spacing-bace*4;//32
+  @include pad{
+    margin-top: $spacing-bace*2;//16
+  }
+  @include mobile{
+    margin-top: $spacing-bace;//8
+  }
 }
 .mr-8{
   margin-right: $spacing-bace*4;
+  @include pad{
+    margin-right: $spacing-bace*2;
+  }
+  @include mobile{
+    margin-right: $spacing-bace;
+  }
 }
 .mb-8{
   margin-bottom: $spacing-bace*4;
+  @include pad{
+    margin-bottom: $spacing-bace*2;
+  }
+  @include mobile{
+    margin-bottom: $spacing-bace;
+  }
 }
 .ml-8{
   margin-left: $spacing-bace*4;
+  @include pad{
+    margin-left: $spacing-bace*2;
+  }
+  @include mobile{
+    margin-left: $spacing-bace;
+  }
 }
 .mt-9{
   margin-top: $spacing-bace*4.5;//36
@@ -288,16 +324,16 @@ a{
   padding-left: $spacing-bace*1.5;
 }
 .pt-4{
-  padding-top: $spacing-bace;//18
+  padding-top: $spacing-bace*2;//16
 }
 .pr-4{
-  padding-right: $spacing-bace;
+  padding-right: $spacing-bace*2;
 }
 .pb-4{
-  padding-bottom: $spacing-bace;
+  padding-bottom: $spacing-bace*2;
 }
 .pl-4{
-  padding-left: $spacing-bace;
+  padding-left: $spacing-bace*2;
 }
 .pt-5{
   padding-top: $spacing-bace;//24
