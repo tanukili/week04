@@ -56,7 +56,6 @@ img {
 
 body {
   font-family: 'Roboto','Noto Sans TC', sans-serif;
-  font-size: 16px;
   line-height: 24px; }
 
 a {
@@ -74,20 +73,16 @@ a {
 .color-pale {
   color: #707070; }
 
-@media (max-width: 992px) {
-  .container {
-    max-width: 696px; } }
-
-@media (max-width: 767px) {
-  .container {
-    max-width: 348px; } }
-
 .container {
-  max-width: 1296px;
-  margin: 0 auto; }
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 0 12px; }
   @media (max-width: 992px) {
     .container {
-      max-width: 696px; } }
+      max-width: 720px; } }
+  @media (max-width: 767px) {
+    .container {
+      max-width: 372px; } }
 
 .font-size-01 {
   font-size: 14px;
@@ -121,6 +116,10 @@ a {
   font-size: 64px;
   line-height: 96px; }
 
+.font-size-07 {
+  font-size: 32px;
+  line-height: 48px; }
+
 .font-weight-01 {
   font-weight: 300; }
 
@@ -131,7 +130,7 @@ a {
   font-weight: 700; }
 
 .font-weight-05 {
-  font-weight: 450; }
+  font-weight: 900; }
 
 .df {
   display: -webkit-box;
@@ -158,6 +157,18 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center; }
+
+.df-fxdc-jcsb {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
 
 .mt-1 {
   margin-top: 6px; }
@@ -338,6 +349,15 @@ a {
 
 .ml-13 {
   margin-left: 110px; }
+
+.mr-14 {
+  margin-right: 4px; }
+
+.mb-14 {
+  margin-bottom: 4px; }
+
+.mt-auto {
+  margin-top: auto; }
 
 .mr-auto {
   margin-right: auto; }
@@ -602,8 +622,8 @@ a {
 
 .index-title {
   color: #650300;
-  font-size: 96px;
-  line-height: 48px;
+  font-size: 48px;
+  line-height: 72px;
   font-weight: 700;
   text-align: center; }
 
@@ -633,21 +653,23 @@ a {
             flex-direction: column;
     -webkit-box-align: end;
         -ms-flex-align: end;
-            align-items: end; }
+            align-items: end;
+    padding: 296px 0; }
 
 .serve h4 {
   text-align: center;
   color: #650300; }
 
-@media (max-width: 992px) {
-  .serve ul {
-    margin: 0 -12px; } }
-
-.serve ul li {
-  max-width: 25%; }
+.serve ul {
+  margin: 0 -12px; }
   @media (max-width: 992px) {
-    .serve ul li {
-      max-width: 50%; } }
+    .serve ul {
+      margin: 0 -12px; } }
+  .serve ul li {
+    max-width: 25%; }
+    @media (max-width: 992px) {
+      .serve ul li {
+        max-width: 50%; } }
 
 .serve img {
   max-width: 100px;
@@ -663,37 +685,40 @@ a {
   color: #AA0601;
   text-align: center; }
 
-@media (max-width: 992px) {
-  .classic ul {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center; } }
-
-.classic ul li {
-  max-width: 416px; }
+.classic ul {
+  margin: 0 -12px; }
   @media (max-width: 992px) {
-    .classic ul li {
-      max-width: 336px;
-      margin: 0 0 24px 0; } }
+    .classic ul {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; } }
+  .classic ul li {
+    max-width: 33%; }
+    @media (max-width: 992px) {
+      .classic ul li {
+        max-width: 336px;
+        margin: 0 0 24px 0; } }
 
 .design {
   background: url(../images/index-bg.png); }
   .design .index-title {
     color: #fff; }
-  @media (max-width: 992px) {
-    .design li {
-      margin: 0 0 24px 0; } }
+  .design li {
+    max-width: 50%; }
+    @media (max-width: 992px) {
+      .design li {
+        margin: 0 0 24px 0; } }
   .design p {
     background: #fff; }
 
 .recommedation ul {
-  margin: 0 -24px; }
+  margin: 0 -12px; }
   .recommedation ul li {
-    max-width: 25%;
+    max-width: 24.55%;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
