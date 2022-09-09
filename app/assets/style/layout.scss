@@ -33,7 +33,7 @@
             text-align: center;
         } 
         a{
-            padding: 25px 0;
+            padding: $spacing-bace*3.125 0;
             @include mobile{
                 font-size: $font-size-bace;
                 line-height: $light-hight-bace;

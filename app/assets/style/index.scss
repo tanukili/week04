@@ -1,7 +1,7 @@
 .index-title{
     color: $FC-indexBanner;
-    font-size: $font-size-bace*6;
-    line-height: $font-size-bace*3;
+    font-size: $font-size-bace*3;
+    line-height: $light-hight-bace*3;
     font-weight: $font-weight-bace*1.75;
     text-align: center;
 }
@@ -25,6 +25,7 @@
         display: flex;
         flex-direction: column;
         align-items: end;
+        padding: $spacing-bace*37 0;
     }
 }
 
@@ -34,6 +35,7 @@
         color: $FC-indexBanner;
     }
     ul{
+        margin: 0 $spacing-bace*-1.5;
         @include pad{
             margin: 0 $spacing-bace*-1.5;
         }
@@ -63,12 +65,13 @@
 
 .classic{
     ul {
+        margin: 0 $spacing-bace*-1.5;
         @include pad{
             flex-direction: column;
             align-items: center;
         }
         li{
-            max-width: 416px;
+            max-width: 33%;
             @include pad{
                 max-width: 336px;
                 margin: 0 0 $spacing-bace*3 0;
@@ -82,6 +85,7 @@
         color: $baceColor-light;
     }
     li{
+        max-width: 50%;
         @include pad{
             margin: 0 0 $spacing-bace*3 0;
         }
@@ -92,9 +96,9 @@
 }
 .recommedation{
     ul{
-       margin: 0 $spacing-bace*-3;  
+       margin: 0 $spacing-bace*-1.5;  
         li{
-            max-width: 25%;
+            max-width: 24.55%;
             flex-direction: column;
             @include pad{
                 max-width: 50%;

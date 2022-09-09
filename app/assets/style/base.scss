@@ -8,7 +8,6 @@ img{
 }
 body{
     font-family: 'Roboto','Noto Sans TC', sans-serif;
-    font-size: $font-size-bace;
     line-height: $light-hight-bace;
 }
 a{
@@ -27,16 +26,6 @@ a{
     color: $baceColor-pale;  
 }
 
-@media(max-width: 992px){
-  .container{
-    max-width: 696px;
-  }
-}
-@media(max-width: 767px){
-  .container{
-    max-width: 348px;
-  }
-}
 @mixin pad{
   @media(max-width: 992px){
     @content;
@@ -48,10 +37,14 @@ a{
   }
 }
 .container{
-  max-width: 1296px;
+  max-width: 1320px;//要加入padding
   margin: 0 auto;
+  padding: 0 $spacing-bace*1.5;//卡片不貼齊容器，沒加會出現x軸
   @include pad{
-    max-width: 696px;
+    max-width: 720px;
+  }
+  @include mobile{
+    max-width: 372px;
   }
 }
 
@@ -87,6 +80,10 @@ a{
   font-size: $font-size-bace*4;//64px
   line-height: $light-hight-bace*4;//96px
 }
+.font-size-07{
+  font-size: $font-size-bace*2;//32px
+  line-height: $light-hight-bace*2;//48px
+}
 
 
 .font-weight-01{
@@ -99,7 +96,7 @@ a{
   font-weight: $font-weight-bace*1.75;//700
 }
 .font-weight-05{
-  font-weight: $font-weight-bace*1.125;//900
+  font-weight: $font-weight-bace*2.25;//900
 }
 
 .df{
@@ -114,6 +111,11 @@ a{
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+.df-fxdc-jcsb{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .mt-1{
@@ -295,6 +297,15 @@ a{
 }
 .ml-13{
   margin-left: $spacing-bace*13.75;
+}
+.mr-14{
+  margin-right: $spacing-bace*0.5;//4
+}
+.mb-14{
+  margin-bottom: $spacing-bace*0.5;//4
+}
+.mt-auto{
+  margin-top: auto;
 }
 .mr-auto{
   margin-right: auto;
