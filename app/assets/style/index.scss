@@ -3,10 +3,13 @@
     font-size: $font-size-bace*3;
     line-height: $light-hight-bace*3;
     font-weight: $font-weight-bace*1.75;
-    text-align: center;
+    @include mobile{
+        font-size: $font-size-bace*1.5;
+        line-height: $light-hight-bace*1.5;
+    }
 }
 .banner{
-    color: $FC-indexBanner;
+    color: $font-color-index;
     height: 787px;
     background: url(../images/home-header.png);
     background-position: center;
@@ -26,24 +29,21 @@
         flex-direction: column;
         align-items: end;
         padding: $spacing-bace*37 0;
+        @include mobile{
+            padding: $spacing-bace*18 0;
+        }
     }
 }
 
 .serve {
-    h4{
-        text-align: center;
-        color: $FC-indexBanner;
-    }
-    ul{
-        margin: 0 $spacing-bace*-1.5;
+    li{
+        max-width: 25%;
         @include pad{
-            margin: 0 $spacing-bace*-1.5;
+            max-width: 50%;
         }
-        li{
-            max-width: 25%;
-            @include pad{
-                max-width: 50%;
-            }
+        @include mobile{
+            max-width: 100%;
+            margin: 0 0 $spacing-bace*3 0;
         }
     } 
     img{
@@ -60,12 +60,10 @@
     line-height: $light-hight-bace*3;
     font-style: italic;
     color: $primary;
-    text-align: center;
 }
 
 .classic{
     ul {
-        margin: 0 $spacing-bace*-1.5;
         @include pad{
             flex-direction: column;
             align-items: center;
@@ -73,8 +71,11 @@
         li{
             max-width: 33%;
             @include pad{
-                max-width: 336px;
+                max-width: 50%;
                 margin: 0 0 $spacing-bace*3 0;
+            }
+            @include mobile{
+                max-width: 100%;
             }
         }
     }
@@ -87,6 +88,7 @@
     li{
         max-width: 50%;
         @include pad{
+            max-width: 100%;
             margin: 0 0 $spacing-bace*3 0;
         }
     }
@@ -95,15 +97,15 @@
     }
 }
 .recommedation{
-    ul{
-       margin: 0 $spacing-bace*-1.5;  
-        li{
-            max-width: 24.55%;
-            flex-direction: column;
-            @include pad{
-                max-width: 50%;
-                margin: 0 0 $spacing-bace*3 0;
-            }
+    li{
+        max-width: 24.55%;
+        flex-direction: column;
+        @include pad{
+            max-width: 50%;
+            margin: 0 0 $spacing-bace*3 0;
+        }
+        @include mobile{
+            max-width: 100%;
         }
     }
     .recommedation-item{
@@ -117,6 +119,9 @@
     max-width: 636px;
     @include pad{
         max-width: 576px;
+    }
+    @include mobile{
+        max-width: 348px;
     }
     .index-title{
         @include pad{
@@ -138,6 +143,9 @@
         @include pad{
             max-width: 576px;
         }
+        @include mobile{
+            max-width: 348px;
+        }
     }
     .privacy-policy{
         display: block;
@@ -149,6 +157,11 @@
         @include pad{
             padding: $spacing-bace*2 $spacing-bace*17;
             margin: 0 $spacing-bace*15;
+        }
+        @include mobile{
+            padding-right: $spacing-bace*17.5;//142
+            padding-left: $spacing-bace*17.5;
+            margin: 0;
         }
     }
 }

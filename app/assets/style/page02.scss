@@ -1,14 +1,24 @@
-.classic-menu{ 
-    h3{
-    text-align: center;
-    }
+.classic-menu{
     a{
         display: block;
-        width: 432px;
-        border: 1px solid #DCDCDC;
-        border-bottom: 8px solid #fff;
+        width: $spacing-bace*54;
+    }
+}
+.page02-banner{
+    img{
+        max-width: 50%;
+    }
+}
+.produce-item{
+    max-width: 25%;
+    .produce-ui{
+        width: $spacing-bace*3;
+        height: $spacing-bace*3;
+        border-radius: $spacing-bace*0.5;
+        -moz-border-radius: $spacing-bace*0.5;
+        -webkit-border-radius: $spacing-bace*0.5;
         &:hover{
-            border-bottom: 8px solid #AA0601;
+            opacity: 0.5;
         }
     }
 }

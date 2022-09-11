@@ -22,9 +22,55 @@ a{
     background: $primary;
     color: $baceColor-light;
 }
-.color-pale{
-    color: $baceColor-pale;  
+.color-primary{
+  color: $primary;
 }
+.color-pale{
+  color: $baceColor-pale;  
+}
+.color-index{
+  color: $font-color-index;
+}
+.color-page-pale{
+  color: $font-color-page;
+  &:hover{
+    color: $baceColor-light;
+    background: $baceColor-bark;
+  }
+}
+.bg-page{
+  background: $bg-color-page;
+  &:hover{
+    background: $baceColor-bark;
+  }
+}
+.bg-ui-dark{
+  background: $produce-ui-dark;
+}
+.bg-ui-colorful{
+  background: $produce-ui-colorful;
+}
+
+.border-pale{
+  border: 1px solid $border-pale;
+}
+.border-page-hover{
+  border-bottom: $spacing-bace solid $baceColor-light;
+  &:hover{
+    border-bottom: $spacing-bace solid $primary;
+}
+}
+.border-tb-deep{
+  border-top: 1px solid $font-color-page;
+  border-bottom: 1px solid $font-color-page;
+}
+.border-r-deep{
+  border-right: 1px solid $font-color-page;
+}
+.border-l-deep{
+  border-left: 1px solid $font-color-page;
+}
+
 
 @mixin pad{
   @media(max-width: 992px){
@@ -79,12 +125,27 @@ a{
 .font-size-06{
   font-size: $font-size-bace*4;//64px
   line-height: $light-hight-bace*4;//96px
+  @include mobile{
+    font-size: $font-size-bace*1.5;//24px
+    line-height: $light-hight-bace*1.5;//36px
+  }
 }
 .font-size-07{
   font-size: $font-size-bace*2;//32px
   line-height: $light-hight-bace*2;//48px
 }
-
+.font-size-series{
+  font-size: $font-size-bace*2.625;//42px
+  line-height: $light-hight-bace*2.625;//63px
+}
+.font-size-page-l{
+  font-size: $font-size-bace*1.1875;//19px
+  line-height: $light-hight-bace*1.2083;//29px
+}
+.font-size-page-s{
+  font-size: $font-size-bace*1.125;//18px
+  line-height: $light-hight-bace*1.125;//27px
+}
 
 .font-weight-01{
   font-weight: $font-weight-bace*0.75;//300
@@ -107,6 +168,10 @@ a{
     justify-content: space-between;
     flex-wrap: wrap;
 }
+.df-jcc{
+  display: flex;
+  justify-content: center;;
+}
 .df-jcsb-aic{
     display: flex;
     justify-content: space-between;
@@ -116,6 +181,9 @@ a{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+.tac{
+  text-align: center;
 }
 
 .mt-1{
@@ -153,6 +221,12 @@ a{
 }
 .ml-3{
   margin-left: $spacing-bace*1.5;
+}
+.mr-m-3{
+  margin-right: $spacing-bace*-1.5;//-12
+}
+.ml-m-3{
+  margin-left: $spacing-bace*-1.5;//-12
 }
 .mt-4{
   margin-top: $spacing-bace*2;//16
@@ -258,6 +332,9 @@ a{
 }
 .mb-10{
   margin-bottom: $spacing-bace*6;
+  @include mobile{
+    margin-bottom: $spacing-bace*3;//24
+  }
 }
 .ml-10{
   margin-left: $spacing-bace*6;
@@ -276,12 +353,18 @@ a{
 }
 .mt-12{
   margin-top: $spacing-bace*10;//80
+  @include mobile{
+    margin-top: $spacing-bace*5;//40
+  }
 }
 .mr-12{
   margin-right: $spacing-bace*10;
 }
 .mb-12{
   margin-bottom: $spacing-bace*10;
+  @include mobile{
+    margin-bottom: $spacing-bace*5;
+  }
 }
 .ml-12{
   margin-left: $spacing-bace*10;
@@ -368,16 +451,16 @@ a{
   padding-left: $spacing-bace*2;
 }
 .pt-5{
-  padding-top: $spacing-bace;//24
+  padding-top: $spacing-bace*3;//24
 }
 .pr-5{
-  padding-right: $spacing-bace;
+  padding-right: $spacing-bace*3;
 }
 .pb-5{
-  padding-bottom: $spacing-bace;
+  padding-bottom: $spacing-bace*3;
 }
 .pl-5{
-  padding-left: $spacing-bace;
+  padding-left: $spacing-bace*3;
 }
 .pt-6{
   padding-top: $spacing-bace*3;//24
@@ -441,12 +524,18 @@ a{
 }
 .pt-11{
   padding-top: $spacing-bace*10;//80
+  @include mobile{
+    padding-top: $spacing-bace*5;//40
+  }
 }
 .pr-11{
   padding-right: $spacing-bace*10;
 }
 .pb-11{
   padding-bottom: $spacing-bace*10;
+  @include mobile{
+    padding-bottom: $spacing-bace*5;
+  }
 }
 .pl-11{
   padding-left: $spacing-bace*10;
@@ -474,4 +563,10 @@ a{
 }
 .pl-13{
   padding-left: $spacing-bace*22;
+}
+.pt-14{
+  padding-top: $spacing-bace*1.375;//11
+}
+.pb-14{
+  padding-bottom: $spacing-bace*1.375;
 }
