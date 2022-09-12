@@ -133,18 +133,42 @@ a{
 .font-size-07{
   font-size: $font-size-bace*2;//32px
   line-height: $light-hight-bace*2;//48px
+  @include pad{
+    font-size: $font-size-bace*1.5;//24px
+    line-height: $light-hight-bace*1.5;//36px
+  }
 }
 .font-size-series{
   font-size: $font-size-bace*2.625;//42px
   line-height: $light-hight-bace*2.625;//63px
+  span{
+    font-size: $font-size-bace*2;//32px
+    line-height: $light-hight-bace*2;//48px
+    @include mobile{
+      font-size: $font-size-bace*1.5;//24px
+      line-height: $light-hight-bace*1.5;//36px
+    }
+  }
+  @include mobile{
+    font-size: $font-size-bace*1.5;//24px
+    line-height: $light-hight-bace*1.5;//36px
+  }
 }
 .font-size-page-l{
   font-size: $font-size-bace*1.1875;//19px
   line-height: $light-hight-bace*1.2083;//29px
+  @include mobile{
+    font-size: $font-size-bace;//16px
+    line-height: $light-hight-bace*1.0833;//26px
+  }
 }
 .font-size-page-s{
   font-size: $font-size-bace*1.125;//18px
   line-height: $light-hight-bace*1.125;//27px
+  @include mobile{
+    font-size: $font-size-bace;//16px
+    line-height: $light-hight-bace;//24px
+  }
 }
 
 .font-weight-01{
@@ -184,6 +208,11 @@ a{
 }
 .tac{
   text-align: center;
+}
+.mobile-dn{
+  @include mobile{
+    display: none;
+  }
 }
 
 .mt-1{
